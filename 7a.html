@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	
+	function validate()
+	{ 
+	 
+	  var name=document.getElementById("name");
+	  if(name.value.length==0)
+	  {
+      alert("enter name");
+	  return false;	
+	  }	
+
+	  var username=document.getElementById("username");
+	  if(username.value.length==0)
+	  {
+      alert("enter username");
+	  return false;	
+	  }	
+
+	  var pwd,cpwd;
+	  pwd = document.getElementById("pwd");
+	  cpwd = document.getElementById("confirmpwd");
+	  if(pwd.value!=confirmpwd.value)
+	  	{alert("pwds donot match");
+          return false;
+      }
+
+
+	return true;
+	}
+</script>
+	
+</head>
+<body>
+<form >
+	name<input id="name" name="name" type="text"></input>
+    <br>username<input id="username" name="username" type="text"></input>
+	<br>password<input id="pwd" name="pwd" type="password"></input>
+	<br>confirm password<input id="confirmpwd" name="confirmpwd" type="password"></input>
+
+	<input id="submit" name="submit" type="submit" onclick="return validate()"></input>
+</form>
+</body>
+</html>
