@@ -1,0 +1,7 @@
+rails new demoapp
+cd dempapp
+rake db:create
+rails g scaffold user name:string usn:string
+rake db:migrate
+cd bin
+rails server -b $IP -p $PORT
