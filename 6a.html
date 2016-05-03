@@ -1,0 +1,46 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function charfreq(t)
+		{ 
+
+			var dic =[]
+			alert(t);
+			for(i =0 ;i<t.length;i++)
+				if(dic.indexOf(t.charAt(i))==-1)
+				{
+					dic.push(t.charAt(i));
+				}
+
+			var cnt = [];
+				for(i=0;i<dic.length;i++)
+					cnt.push(0);
+
+			for(i =0 ;i<t.length;i++)
+			{
+				indx = dic.indexOf(t.charAt(i));
+				cnt[indx]++;
+			}
+
+		temp = ""
+		for(i =0 ;i<dic.length;i++)
+		{
+			temp = temp + dic[i]+" "+cnt[i]+"<br>";
+
+		}
+
+		document.getElementById("textarea").innerHTML= temp;
+	}
+	</script>
+</head>
+<body>
+<form>
+	<input type="text" name="name" id="name"></input>
+	<input type="button" onclick="charfreq(this.form.name.value)"></input>
+</form>
+<h1 id="textarea">
+</h1>
+</body>
+</html>
