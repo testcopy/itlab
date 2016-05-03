@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+	function display()
+	{
+		var sel = document.getElementById("sel");
+		var temp;
+		if(sel.value == "dsc")
+			temp = "no class = 10 , credits = 10 , textbook = A";
+
+		if(sel.value == "dd")
+			temp = "no class = 20 , credits = 10 , textbook = B";
+
+		if(sel.value == "cn")
+			temp = "no class = 30 , credits = 10 , textbook = C";
+
+		if(sel.value == "cd")
+			temp = "no class = 40 , credits = 10 , textbook = D";
+
+
+		if(sel.value == "a")
+			temp = "no class = 10 , credits = 10 , textbook = A";
+
+		if(sel.value == "b")
+			temp = "no class = 20 , credits = 10 , textbook = B";
+
+		if(sel.value == "c")
+			temp = "no class = 30 , credits = 10 , textbook = C";
+
+		if(sel.value == "d")
+			temp = "no class = 40 , credits = 10 , textbook = D";
+
+		document.getElementById("textarea").innerHTML=temp;
+	}
+
+</script>
+</head>
+<body>
+
+<form>	
+	<select onchange="display()"  id = "sel">
+		<optgroup label="V">
+		<option>dsc</option>
+		<option>dd</option>
+		<option>cn</option>
+		<option>cd</option>
+	</optgroup>
+	<optgroup label="VI">
+		<option>a</option>
+		<option>b</option>
+		<option>c</option>
+		<option>d</option>
+	</optgroup>
+	</select>
+</form>
+<h1 id="textarea"></h1>
+</body>
+</html>
