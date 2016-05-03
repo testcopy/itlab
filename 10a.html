@@ -1,0 +1,29 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+
+	</title>
+	<script type="text/javascript">
+		
+		function fav(i)
+		{
+			var temp;
+          if(i==1)
+          	temp="MSRIT is the fav";
+          if(i==2)
+          	temp="PESIT is the fav";
+          if(i==3)
+          	temp="UVIT is the fav";
+      document.getElementById("textarea").innerHTML=temp;
+		}
+	</script>
+</head>
+<body>
+<input type="radio" onclick="fav(1)" name="M"> </input>
+<input type="radio" onclick="fav(2)" name="M"> </input>
+<input type="radio" onclick="fav(3)" name="M"> </input>
+<h1 id="textarea"></h1>
+</body>
+</html>
